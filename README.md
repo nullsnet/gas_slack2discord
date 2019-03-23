@@ -11,7 +11,7 @@ Convert Slack format webhook to Discord format, and post it to Discord.
 1. Get Discord Webhook URL.
 2. Extract `{webhook.id}` and `{webhook.token}` from Webhook URL, and URL encode.
    i.e., `https://discordapp.com/api/webhooks/{webhook.id}/{webhook.token}` -> `{webhook.id}%2F{webhook.token}`
-3. Post to `https://script.google.com/macros/s/AKfycbyFjUJiMhn_eeYgXCZ6ekmR9TZ-S_2QKdygn9cePw9L6_3lzt8/exec?url={webhook.id}%2F{webhook.token}` with Slack format JSON payload. Or regist this URL to your Slack Webhook service.
+3. Post to `https://script.google.com/macros/s/YOUR_SCRIPT_URL/exec?url={webhook.id}%2F{webhook.token}` with Slack format JSON payload. Or regist this URL to your Slack Webhook service.
 
 ### GET Parameter
 | Parameter                                        | Details                                                          |
